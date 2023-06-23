@@ -11,8 +11,8 @@ public class SquareEquation
         double x1;
         double x2;
         double[] array = new double[2];
-        //double d = b * b - 4 * a * c;
-        double d = (b - 2 * Math.Sqrt(a * c)) * (b + 2 * Math.Sqrt(a * c));
+        double d = b * b - 4 * a * c;
+        //double d = (b - 2 * Math.Sqrt(a * c)) * (b + 2 * Math.Sqrt(a * c));
         if (d<0 && !(-Single.Epsilon < d && d < 0))
         {
             array = new double[0];
