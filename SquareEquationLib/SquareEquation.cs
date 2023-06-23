@@ -34,6 +34,7 @@ public class SquareEquation
                 x1 = (2 * c) / -(b - Math.Sign(b) * Math.Sqrt(d));
                 x2 = c / (a * x1);
             }
+            //x1 = (2 * c) / -(b + Math.Sign(b) * Math.Sqrt(d));
             array = new double[] { x1, x2 };
         }
         return array;
