@@ -11,10 +11,11 @@ public class SquareEquation
         double x1;
         double x2;
         double[] array = new double[2];
-        double d = b * b - 4 * a * c;
+        //double d = b * b - 4 * a * c;
+        double d = (b - 2 * Math.Sqrt(a * c)) * (b + 2 * Math.Sqrt(a * c));
         int dcon = Convert.ToInt32(d);
         double eps = Math.Abs(dcon - d);
-        if (d < 0 ||(d<0&&Math.Abs(d) < eps))
+        if (d<0)
         {
             array = new double[0];
         }
