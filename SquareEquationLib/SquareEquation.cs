@@ -24,17 +24,8 @@ public class SquareEquation
         }
         if(d>0|| d >= Single.Epsilon)
         {
-            if (b>=0)
-            {
-                x1 = (2 * c) / -(b + Math.Sign(b) * Math.Sqrt(d));
-                x2 = c / (a * x1);
-            }
-            else if (b<0)
-            {
-                x1 = (2 * c) / -(b - Math.Sign(b) * Math.Sqrt(d));
-                x2 = c / (a * x1);
-            }
-            //x1 = (2 * c) / -(b + Math.Sign(b) * Math.Sqrt(d));
+            x1 = (2*c)/-(b+Math.Sign(b)*Math.Sqrt(d));
+            x2 = c / (a*x1);
             array = new double[] { x1, x2 };
         }
         return array;
