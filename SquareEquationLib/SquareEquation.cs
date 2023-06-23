@@ -19,7 +19,7 @@ public class SquareEquation
         {
             array = new double[0];
         }
-        if (d == 0)
+        if (d == 0||Math.Abs(d)<eps)
         {
             x1 = 2*c/-b;
             array = new double[] { x1 };
