@@ -15,7 +15,7 @@ public class SquareEquation
         double d = (b - 2 * Math.Sqrt(a * c)) * (b + 2 * Math.Sqrt(a * c));
         int dcon = Convert.ToInt32(d);
         double eps = Math.Abs(dcon - d);
-        if (d<0)
+        if (d<0&&Math.Abs(d)>eps)
         {
             array = new double[0];
         }
