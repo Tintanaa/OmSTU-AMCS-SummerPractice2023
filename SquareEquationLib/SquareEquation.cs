@@ -15,16 +15,16 @@ public class SquareEquation
         double d = (b - 2 * Math.Sqrt(a * c)) * (b + 2 * Math.Sqrt(a * c));
         int dcon = Convert.ToInt32(d);
         double eps = Math.Abs(dcon - d);
-        if (d<0&&Math.Abs(d)>eps)
+        if (d<0 && !(-Single.Epsilon < d && d < 0))
         {
             array = new double[0];
         }
-        if (d == 0||Math.Abs(d)<eps)
+        if (d == 0|| d < Single.Epsilon)
         {
             x1 = 2*c/-b;
             array = new double[] { x1 };
         }
-        else
+        if(d>0|| d >= Single.Epsilon)
         {
             //x1 = -(b + Math.Sign(b) * Math.Sqrt(d)) / 2;
             x1 = (2*c)/-(b+Math.Sign(b)*Math.Sqrt(d));
