@@ -17,7 +17,7 @@ public class SquareEquation
         {
             throw new ArgumentException("Ошибка");
         }
-        if (d<=eps)
+        if (d<=-eps)
         {
             array = new double[0];
         }
