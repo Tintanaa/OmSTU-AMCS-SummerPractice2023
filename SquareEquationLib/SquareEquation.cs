@@ -17,15 +17,29 @@ public class SquareEquation
         {
             array = new double[0];
         }
-        if (d == 0|| d < Single.Epsilon)
+        if (d == 0 || d < Single.Epsilon)
         {
             x1 = 2*c/-b;
             array = new double[] { x1 };
         }
         if(d>0|| d >= Single.Epsilon)
         {
+            /*
+            if (b>0)
+            {
+
+            }
+            else if (b==0)
+            { 
+
+            }
+            else
+            {
+
+            }
+            */
             //x1 = -(b + Math.Sign(b) * Math.Sqrt(d)) / 2;
-            x1 = (2*c)/-(b+Math.Sign(b)*Math.Sqrt(d));
+            x1 = (2*c)/-(b-Math.Sign(b)*Math.Sqrt(d));
             x2 = c / a*x1;
             array = new double[] { x1, x2 };
         }
