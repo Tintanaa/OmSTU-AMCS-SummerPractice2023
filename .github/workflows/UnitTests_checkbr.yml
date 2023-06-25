@@ -34,5 +34,5 @@ jobs:
       - name: Test SquareEquation (coverage Build 2)
         run: dotnet build ./UnitTests/SquareEquationCoverage
 
-      - name: Test SquareEquation (creator @Tintanaa, no coverage)
+      - name: Test SquareEquation (creator @Tintanaa, full coverage)
         run: dotnet test  ./UnitTests/SquareEquationCoverage/XUnit.Coverlet.MSBuild /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
