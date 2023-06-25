@@ -2,7 +2,7 @@ name: UnitTestsChecker
 
 on:
   push:
-    branches: ["square_equation", "newBranch"]
+    branches: ["square_equation", "unitTests"]
 
 jobs:
   build:
