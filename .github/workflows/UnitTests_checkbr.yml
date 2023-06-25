@@ -25,8 +25,14 @@ jobs:
       - name: Test SquareEquation (creator @zaryanezrya)
         run: ./SquareEquationTest ./SquareEquationLib/bin/Debug/net7.0/SquareEquationLib.dll
 
-      - name: Test SquareEquation Build 2
+      - name: Test SquareEquation (no coverage Build 2)
         run: dotnet build UnitTests
 
-      - name: Test SquareEquation (creator @Tintanaa)
-        run: dotnet test UnitTests /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      - name: Test SquareEquation (creator @Tintanaa, no coverage)
+        run: dotnet test  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+
+      - name: Test SquareEquation (coverage Build 2)
+        run: dotnet build ./UnitTests/SquareEquationCoverage
+
+      - name: Test SquareEquation (creator @Tintanaa, no coverage)
+        run: dotnet test  ./UnitTests/SquareEquationCoverage/XUnit.Coverlet.MSBuild /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
