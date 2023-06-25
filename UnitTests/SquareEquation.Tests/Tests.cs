@@ -116,7 +116,7 @@ namespace SquareEquationSolver.UnitTests.Services
             bool result;
             try
             {
-                double[] a = SquareEquationSolverService.Solve(1, double.NaN, 1);
+                double[] a = SquareEquationSolverService.Solve(1, 1, double.NaN);
                 result = true;
             }
             catch (ArgumentException)
@@ -131,7 +131,7 @@ namespace SquareEquationSolver.UnitTests.Services
             bool result;
             try
             {
-                double[] a = SquareEquationSolverService.Solve(1, double.PositiveInfinity, 1);
+                double[] a = SquareEquationSolverService.Solve(1, 1, double.PositiveInfinity);
                 result = true;
             }
             catch (ArgumentException)
@@ -146,7 +146,7 @@ namespace SquareEquationSolver.UnitTests.Services
             bool result;
             try
             {
-                double[] a = SquareEquationSolverService.Solve(1, double.NegativeInfinity, 1);
+                double[] a = SquareEquationSolverService.Solve(1, 1, double.NegativeInfinity);
                 result = true;
             }
             catch (ArgumentException)

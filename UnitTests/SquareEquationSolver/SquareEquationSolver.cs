@@ -11,19 +11,19 @@ namespace SquareEquationSolver.Services
             double[] array = new double[2];
             double eps = 1e-9;
             double d = b * b - 4 * a * c;
-            if (-eps < a && a < eps)
+            if (-eps < a & a < eps)
             {
-                throw new System.ArgumentException();
+                throw new ArgumentException();
             }
             if (a == 0 || new[] { a, b, c }.Any(double.IsNaN) || new[] { a, b, c }.Any(double.IsInfinity))
             {
-                throw new ArgumentException("Ошибка");
+                throw new ArgumentException();
             }
             if (d <= -eps)
             {
                 array = new double[0];
             }
-            else if (-eps < d && d < eps)
+            else if (-eps < d & d < eps)
             {
                 x1 = -b / (2 * a);
                 array = new double[] { x1 };
