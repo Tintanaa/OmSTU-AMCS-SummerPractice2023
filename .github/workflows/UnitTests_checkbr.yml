@@ -29,7 +29,7 @@ jobs:
         run: dotnet build UnitTests
 
       - name: Test SquareEquation (creator @Tintanaa, no coverage)
-        run: dotnet test  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+        run: dotnet test UnitTests /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
 
       - name: Test SquareEquation (coverage Build 2)
         run: dotnet build ./UnitTests/SquareEquationCoverage
