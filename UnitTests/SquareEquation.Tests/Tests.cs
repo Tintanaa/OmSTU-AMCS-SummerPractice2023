@@ -1,6 +1,6 @@
 ﻿using Xunit;
 using SquareEquationSolver.Services;
-
+//test
 namespace SquareEquationSolver.UnitTests.Services
 {
     public class SquareEquation_Checker
