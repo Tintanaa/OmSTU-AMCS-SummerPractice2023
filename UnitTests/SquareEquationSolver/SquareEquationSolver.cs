@@ -1,5 +1,5 @@
 ﻿using System;
-
+//test
 namespace SquareEquationSolver.Services
 {
     public class SquareEquationSolverService
