@@ -25,4 +25,16 @@ public class ServiceLocatorTest
         var actual = SalonLib.ServiceLocator.GetService("Писать статьи");
         Assert.Equal(expected, actual);
     }
+<<<<<<< HEAD
 }
+=======
+
+    [Fact]
+    public void Service4Test()
+    {
+        var expected = "За карточным столом";
+        var actual = SalonLib.ServiceLocator.GetService("Играть в карты");
+        Assert.Equal(expected, actual);
+    }
+}
+>>>>>>> 00f413b (Добавлен сервис 4)
