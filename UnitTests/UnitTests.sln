@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareEquation.Tests", "SquareEquation.Tests\SquareEquation.Tests.csproj", "{80933935-35FD-470A-8941-8CABE13926D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareEquationSolver", "SquareEquationSolver\SquareEquationSolver.csproj", "{C46572B0-70A0-44CA-A830-EEDF121AFC22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80933935-35FD-470A-8941-8CABE13926D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80933935-35FD-470A-8941-8CABE13926D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80933935-35FD-470A-8941-8CABE13926D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80933935-35FD-470A-8941-8CABE13926D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46572B0-70A0-44CA-A830-EEDF121AFC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46572B0-70A0-44CA-A830-EEDF121AFC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46572B0-70A0-44CA-A830-EEDF121AFC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46572B0-70A0-44CA-A830-EEDF121AFC22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01860F34-2388-4CDF-AF90-3638A7E3FC45}
+	EndGlobalSection
+EndGlobal
