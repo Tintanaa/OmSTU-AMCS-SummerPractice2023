@@ -17,7 +17,7 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore SquareEquationLib && dotnet restore UnitTests
+        run: dotnet restore SquareEquationLib
 
       - name: Gherkin Unittests build (creator @Tintanaa)
         run: dotnet build ./GherkinUnitTests/Unittestsnocoverage
