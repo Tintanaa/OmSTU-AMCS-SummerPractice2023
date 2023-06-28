@@ -28,7 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SquareEquationLib\SquareEquationLib.csproj" />
+    <Reference Include="SquareEquationLib">
+      <HintPath>..\..\..\SquareEquationLib\bin\Debug\net7.0\SquareEquationLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-name: UnitTestsChecker
+name: Gherkin
 
 on:
   push:
