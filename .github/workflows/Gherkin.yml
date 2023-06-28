@@ -1,0 +1,32 @@
+name: UnitTestsChecker
+
+on:
+  push:
+    branches: ["Gherkin"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET7
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore SquareEquationLib && dotnet restore UnitTests
+
+      - name: Gherkin Unittests build (creator @Tintanaa)
+        run: dotnet build ./GherkinUnitTests/Unittestsnocoverage
+      
+      - name: Gherkin UnitTests run (creator @Tintanaa)
+        run: dotnet test ./GherkinUnitTests/Unittestsnocoverage /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+       
+      - name: Gherkin Unittests coverage build (creator @Tintanaa)
+        run: dotnet build ./GherkinUnitTests/Unittestscoverage
+      
+      - name: Gherkin UnitTests run (creator @Tintanaa)
+        run: dotnet test ./GherkinUnitTests/UnittestsCoverage/XUnit.Coverlet.MSBuild /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
