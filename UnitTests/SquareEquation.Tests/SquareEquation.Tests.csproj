@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SquareEquationSolver\SquareEquationSolver.csproj" />
+    <Reference Include="SquareEquationLib">
+      <HintPath>..\..\SquareEquationLib\bin\Debug\net7.0\SquareEquationLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
