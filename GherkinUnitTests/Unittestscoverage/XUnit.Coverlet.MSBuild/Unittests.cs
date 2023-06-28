@@ -1,6 +1,6 @@
 using SquareEquationLib;
 using TechTalk.SpecFlow;
-namespace XUnit.Coverlet.MSBuild
+namespace XUnit.Coverlet
 {
     [Binding]
     public class Поиск_корнейКВУР
