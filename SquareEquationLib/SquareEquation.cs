@@ -23,12 +23,13 @@ public class SquareEquation
         }
         else if (-eps < d & d < eps)
         {
-            x1 = -b/(2*a);
+            x1 = -(b)/(2*a);
             array = new double[] { x1 };
         }
         else 
         {
-            if (b == 0) { x1 = (-b + Math.Sqrt(d)) / (2 * a); }
+            if (Math.Sign(b)==0)
+            { x1 = (-b + Math.Sqrt(d)) / (2 * a); }
             else { x1 = (-b + Math.Sign(b) * Math.Sqrt(d)) / (2 * a); }
             x2 = c /(a*x1);
             array = new double[] { x1, x2 };
