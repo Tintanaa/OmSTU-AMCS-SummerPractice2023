@@ -18,15 +18,9 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore SquareEquationLib
-
-      - name: Gherkin Unittests build (creator @Tintanaa)
-        run: dotnet build ./GherkinUnitTests/Unittestsnocoverage
-      
-      - name: Gherkin UnitTests run (creator @Tintanaa)
-        run: dotnet test ./GherkinUnitTests/Unittestsnocoverage /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
        
       - name: Gherkin Unittests coverage build (creator @Tintanaa)
-        run: dotnet build ./GherkinUnitTests/Unittestscoverage/XUnit.Coverlet.MSBuild
+        run: dotnet build ./GherkinUnitTests/Unittestscoverage
       
       - name: Gherkin UnitTests run (creator @Tintanaa)
         run: dotnet test ./GherkinUnitTests/UnittestsCoverage/XUnit.Coverlet.MSBuild /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov

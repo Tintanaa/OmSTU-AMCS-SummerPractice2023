@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -15,9 +15,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SpecFlow" Version="3.9.74" />
-    <PackageReference Include="SpecFlow.Internal.Json" Version="1.0.8" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
     <PackageReference Include="xunit" Version="2.4.2" />
@@ -32,9 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="SquareEquationLib">
-      <HintPath>..\..\..\SquareEquationLib\bin\Debug\net7.0\SquareEquationLib.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\..\SquareEquationLib\SquareEquationLib.csproj" />
   </ItemGroup>
 
 </Project>

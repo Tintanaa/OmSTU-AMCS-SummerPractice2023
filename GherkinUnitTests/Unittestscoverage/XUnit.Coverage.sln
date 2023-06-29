@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.Collector", "XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj", "{2F991CB3-82B1-4A1E-BF7D-7144FEEB5817}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.MSBuild", "XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj", "{DC5244AC-E1BF-4CB8-BEC6-C8DC0D852D33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.MSBuild", "XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj", "{39120451-ECB9-49DD-8365-81D09A28A82D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F991CB3-82B1-4A1E-BF7D-7144FEEB5817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F991CB3-82B1-4A1E-BF7D-7144FEEB5817}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F991CB3-82B1-4A1E-BF7D-7144FEEB5817}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F991CB3-82B1-4A1E-BF7D-7144FEEB5817}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC5244AC-E1BF-4CB8-BEC6-C8DC0D852D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC5244AC-E1BF-4CB8-BEC6-C8DC0D852D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC5244AC-E1BF-4CB8-BEC6-C8DC0D852D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC5244AC-E1BF-4CB8-BEC6-C8DC0D852D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39120451-ECB9-49DD-8365-81D09A28A82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39120451-ECB9-49DD-8365-81D09A28A82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39120451-ECB9-49DD-8365-81D09A28A82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39120451-ECB9-49DD-8365-81D09A28A82D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
