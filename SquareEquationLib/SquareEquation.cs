@@ -11,11 +11,11 @@ public class SquareEquation
         double d = b * b - 4 * a * c;
         if (-eps < a && a < eps)
         {
-            throw new System.ArgumentException();
+            throw new ArgumentException();
         }
         if (a == 0 || new[] { a, b, c }.Any(double.IsNaN) || new[] { a, b, c }.Any(double.IsInfinity))
         {
-            throw new ArgumentException("Ошибка");
+            throw new ArgumentException();
         }
         if (d<=-eps)
         {
