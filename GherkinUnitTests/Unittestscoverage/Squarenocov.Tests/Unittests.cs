@@ -1,6 +1,6 @@
 ﻿using SquareEquationLib;
 using TechTalk.SpecFlow;
-namespace Squarenocov.Tests
+namespace Squarecov.Tests
 {
     [Binding]
     public class Поиск_корнейКВУР

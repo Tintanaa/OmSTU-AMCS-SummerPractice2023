@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Squarenocov.Tests
+namespace Squarecov.Tests
 {
     using TechTalk.SpecFlow;
     using System;
@@ -28,10 +28,10 @@ namespace Squarenocov.Tests
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Feature1.feature"
+#line 1 "ruUnittests.feature"
 #line hidden
         
-        public НахождениеКорнейFeature(НахождениеКорнейFeature.FixtureData fixtureData, Squarenocov_Tests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public НахождениеКорнейFeature(НахождениеКорнейFeature.FixtureData fixtureData, Squarecov_Tests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
