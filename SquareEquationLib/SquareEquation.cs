@@ -29,8 +29,8 @@ public class SquareEquation
         else 
         {
             if (Math.Sign(b)==0)
-            { x1 = (-b + Math.Sqrt(d)) / (2 * a); }
-            else { x1 = (-b + Math.Sign(b) * Math.Sqrt(d)) / (2 * a); }
+            { x1 = (2 * c) / -(b + Math.Sqrt(d)); }
+            else { x1 = (2 * c) / -(b + Math.Sign(b) * Math.Sqrt(d)); }
             x2 = c /(a*x1);
             array = new double[] { x1, x2 };
         }
