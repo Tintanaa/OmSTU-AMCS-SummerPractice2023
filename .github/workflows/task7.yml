@@ -20,7 +20,7 @@ jobs:
         run: dotnet restore ConsoleApp1
 
       - name: Test Build
-        run: dotnet build 
+        run: dotnet buil 
 
       - name: MyTests
         run: dotnet test UARM_Tests /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov

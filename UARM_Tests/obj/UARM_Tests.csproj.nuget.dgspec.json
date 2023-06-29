@@ -113,9 +113,17 @@
               "target": "Package",
               "version": "[17.5.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "SpecFlow": {
               "target": "Package",
               "version": "[3.9.74, )"
+            },
+            "SpecFlow.Internal.Json": {
+              "target": "Package",
+              "version": "[1.0.8, )"
             },
             "SpecFlow.Tools.MsBuild.Generation": {
               "target": "Package",

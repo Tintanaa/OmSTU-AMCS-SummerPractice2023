@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4SmvzEwX6tFa7jsxz9JKZf8WQuvVnAyRYGjnIALkXfhY/JTuWHU+rJKh+QTMDIl6+13fBFzw8gm1sQhMG8TPAw==",
+  "dgSpecHash": "QBYJlBm73mUELl9GYu97O7Rrnla/h/3E3YQQUrnvbR5E24eRQcvNCcDJN8M3Arr2+V2YkycrXPlCYMOnD0fpFQ==",
   "success": true,
   "projectFilePath": "F:\\osadsad\\UARM_Tests\\UARM_Tests.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,7 @@
     "C:\\Users\\miiag\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
     "C:\\Users\\miiag\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\miiag\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\miiag\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\miiag\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\miiag\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\miiag\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\miiag\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
