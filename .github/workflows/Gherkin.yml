@@ -18,8 +18,14 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore SquareEquationLib && dotnet restore ./GherkinUnitTests/Unittestscoverage
+
+      - name: Unittests build (creator @zaryanezrya)
+        run: dotnet build SquareEquationLib --no-restore /p:ContinuousIntegrationBuild=true
+      
+      - name: UnitTests run (creator @zaryanezrya)
+        run: ./SquareEquationTest ./SquareEquationLib/bin/Debug/net7.0/SquareEquationLib.dll
        
-      - name: Gherkin Unittests coverage build (creator @Tintanaa)
+      - name: Gherkin Unittests build (creator @Tintanaa)
         run: dotnet build ./GherkinUnitTests/Unittestscoverage
       
       - name: Gherkin UnitTests run (creator @Tintanaa)

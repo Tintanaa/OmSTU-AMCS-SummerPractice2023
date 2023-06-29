@@ -9,7 +9,7 @@ public class SquareEquation
         double[] array = new double[2];
         double eps = 1e-6;
         double d = b * b - 4 * a * c;
-        if (-eps < a && a < eps)
+        if (-eps < a & a < eps)
         {
             throw new ArgumentException();
         }
@@ -21,7 +21,7 @@ public class SquareEquation
         {
             array = new double[0];
         }
-        else if (-eps < d && d < eps)
+        else if (-eps < d & d < eps)
         {
             x1 = -b/(2*a);
             array = new double[] { x1 };
