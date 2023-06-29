@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "UARM_Flight/1.0.0": {
+        "runtime": {
+          "UARM_Flight.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UARM_Flight/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

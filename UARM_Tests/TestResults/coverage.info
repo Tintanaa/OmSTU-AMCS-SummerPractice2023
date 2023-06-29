@@ -1,0 +1,55 @@
+SF:F:\osadsad\ConsoleApp1\UARM.cs
+FN:10,System.Boolean SpaceBattle.ShipMovement::get_moveflag()
+FNDA:14,System.Boolean SpaceBattle.ShipMovement::get_moveflag()
+DA:11,14
+FN:11,System.Boolean SpaceBattle.ShipMovement::get_speedflag()
+FNDA:10,System.Boolean SpaceBattle.ShipMovement::get_speedflag()
+DA:12,10
+FN:12,System.Boolean SpaceBattle.ShipMovement::get_positionflag()
+FNDA:12,System.Boolean SpaceBattle.ShipMovement::get_positionflag()
+DA:13,12
+FN:16,System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>> SpaceBattle.ShipMovement::get_Speed()
+FNDA:2,System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>> SpaceBattle.ShipMovement::get_Speed()
+DA:17,2
+FN:17,System.Void SpaceBattle.ShipMovement::set_Speed(System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>)
+FNDA:7,System.Void SpaceBattle.ShipMovement::set_Speed(System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>)
+DA:18,7
+FN:21,System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>> SpaceBattle.ShipMovement::get_Position()
+FNDA:2,System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>> SpaceBattle.ShipMovement::get_Position()
+DA:22,2
+FN:22,System.Void SpaceBattle.ShipMovement::set_Position(System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>)
+FNDA:7,System.Void SpaceBattle.ShipMovement::set_Position(System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>)
+DA:23,7
+FN:27,System.ValueTuple`2<System.Double,System.Double> SpaceBattle.ShipMovement::Shipmoving(System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>,System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>,System.Boolean,System.Boolean,System.Boolean)
+FNDA:7,System.ValueTuple`2<System.Double,System.Double> SpaceBattle.ShipMovement::Shipmoving(System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>,System.Collections.Generic.List`1<System.ValueTuple`2<System.Double,System.Double>>,System.Boolean,System.Boolean,System.Boolean)
+DA:28,7
+DA:29,7
+DA:30,7
+DA:31,7
+DA:32,7
+DA:33,7
+DA:34,7
+DA:35,7
+DA:36,7
+DA:37,13
+DA:38,1
+DA:39,1
+DA:40,1
+DA:41,1
+BRDA:37,54,0,5
+BRDA:37,62,0,3
+BRDA:37,54,1,4
+BRDA:37,62,1,4
+BRDA:37,78,0,6
+BRDA:37,78,1,1
+FN:7,System.Void SpaceBattle.ShipMovement::.ctor()
+FNDA:7,System.Void SpaceBattle.ShipMovement::.ctor()
+DA:8,7
+DA:9,7
+LF:23
+LH:23
+BRF:6
+BRH:6
+FNF:9
+FNH:9
+end_of_record
