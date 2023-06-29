@@ -23,4 +23,4 @@ jobs:
         run: dotnet build ./GherkinUnitTests/Unittestscoverage
       
       - name: Gherkin UnitTests run (creator @Tintanaa)
-        run: dotnet test ./GherkinUnitTests/UnittestsCoverage /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+        run: dotnet test ./GherkinUnitTests/Unittestscoverage /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
