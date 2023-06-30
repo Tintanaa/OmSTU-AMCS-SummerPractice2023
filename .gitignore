@@ -41,3 +41,16 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+*.sqlite
+*.sqlite
+*.bin
+.vs/osadsad/v17/.wsuo
+.vs/ProjectEvaluation/spacebattle.metadata.v7.bin
+.vs/ProjectEvaluation/spacebattle.projects.v7.bin
+.vs/slnx.sqlite
+.vs/Spacebattle/DesignTimeBuild/.dtbcache.v2
+.vs/Spacebattle/v17/.futdcache.v2
+.vs/VSWorkspaceState.json
+.vs/Spacebattle/v17/.suo
+.vs/osadsad/v17/.wsuo
+.vs/osadsad/v17/workspaceFileList.bin

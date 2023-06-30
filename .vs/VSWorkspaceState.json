@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
-    "\\ConsoleApp1",
-    "\\UARM_Tests"
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\Spacebattle.sln",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
