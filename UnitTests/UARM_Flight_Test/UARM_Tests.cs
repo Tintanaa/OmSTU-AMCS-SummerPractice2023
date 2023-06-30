@@ -1,4 +1,4 @@
-using UARM_Flight; 
+using UARM_Flight;
 using TechTalk.SpecFlow;
 
 namespace SpaceBattleTests

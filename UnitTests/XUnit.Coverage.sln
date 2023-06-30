@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UARM_Flight_Test", "UARM_Flight_Test\UARM_Flight_Test.csproj", "{A4D8D06E-9763-49D2-9EB4-13D11C49EB4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UARM_Flight", "..\UARM_Flight\UARM_Flight.csproj", "{9A200AB7-AF83-40BD-8F4F-BF6092B0FBBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{A4D8D06E-9763-49D2-9EB4-13D11C49EB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D8D06E-9763-49D2-9EB4-13D11C49EB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D8D06E-9763-49D2-9EB4-13D11C49EB4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A200AB7-AF83-40BD-8F4F-BF6092B0FBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A200AB7-AF83-40BD-8F4F-BF6092B0FBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A200AB7-AF83-40BD-8F4F-BF6092B0FBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A200AB7-AF83-40BD-8F4F-BF6092B0FBBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
