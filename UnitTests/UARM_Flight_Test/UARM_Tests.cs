@@ -1,8 +1,8 @@
 using UARM_Flight;
 using TechTalk.SpecFlow;
 
-namespace SpaceBattleTests
-{
+namespace UARM_Flight_Test
+{ 
     [Binding]
     public class »гровойќбъектћожетѕеремещатьс€ѕоѕр€мой
     {

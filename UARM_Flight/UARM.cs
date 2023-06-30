@@ -1,5 +1,5 @@
 ﻿namespace UARM_Flight;
-public class UARM_Flight
+public class UARM_Flights
 {
     private bool move_flag;
     private bool speed_flag;
@@ -26,7 +26,7 @@ public class UARM_Flight
     public static (double, double) Shipmoving
         (List<(double, double)> position, List<(double, double)> speed, bool IsAllow, bool IsPosition, bool IsSpeed)
     {
-        var SM = new UARM_Flight
+        var SM = new UARM_Flights
         {
             moveflag = IsAllow,
             positionflag = IsPosition,
