@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SquareEquationLib\UARMFlight.csproj" />
+    <ProjectReference Include="..\..\..\uarm\UARMFlight.csproj" />
   </ItemGroup>
 
 </Project>
