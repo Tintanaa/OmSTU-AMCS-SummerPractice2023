@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UARMFlightTest", "Squarenocov.Tests\UARMFlightTest.csproj", "{EDCFCFAE-8014-4553-BF5B-B410E3703A21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UARMFlight", "..\..\uarm\UARMFlight.csproj", "{48C62A3D-AEDF-4FA5-8BBD-D55A143D1602}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCFCFAE-8014-4553-BF5B-B410E3703A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCFCFAE-8014-4553-BF5B-B410E3703A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCFCFAE-8014-4553-BF5B-B410E3703A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCFCFAE-8014-4553-BF5B-B410E3703A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C62A3D-AEDF-4FA5-8BBD-D55A143D1602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C62A3D-AEDF-4FA5-8BBD-D55A143D1602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C62A3D-AEDF-4FA5-8BBD-D55A143D1602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C62A3D-AEDF-4FA5-8BBD-D55A143D1602}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
