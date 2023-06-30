@@ -17,10 +17,10 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore ./UARM_Flight && dotnet restore ./UnitTests
+        run: dotnet restore SquareEquationLib && dotnet restore ./GherkinUnitTests/Unittestscoverage
 
-      - name: Test Build
-        run: dotnet build ./UnitTests/XUnit.Coverage.sln --no-restore /p:ContinuousIntegrationBuild=true
-
-      - name: MyTests
-        run: dotnet test ./UnitTests /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      - name: Gherkin Unittests build (creator @Tintanaa)
+        run: dotnet build ./GherkinUnitTests/Unittestscoverage
+      
+      - name: Gherkin UnitTests run (creator @Tintanaa)
+        run: dotnet test ./GherkinUnitTests/Unittestscoverage /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov

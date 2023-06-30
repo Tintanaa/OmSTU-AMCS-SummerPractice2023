@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\GherkinUnitTests",
-    "\\GherkinUnitTests\\Unittestscoverage",
-    "\\UARM_Flight",
-    "\\UnitTests",
-    "\\UnitTests\\UARM_Flight_Test"
+    "\\GherkinUnitTests\\Unittestscoverage"
   ],
-  "SelectedNode": "\\GherkinUnitTests\\Unittestscoverage",
+  "SelectedNode": "\\GherkinUnitTests\\Unittestscoverage\\Unittestscoverage.sln",
   "PreviewInSolutionExplorer": false
 }
