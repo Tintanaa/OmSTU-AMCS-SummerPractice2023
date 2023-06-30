@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace UARM_Flight_Test
+namespace UARMFlightTest
 {
     using TechTalk.SpecFlow;
     using System;
@@ -31,7 +31,7 @@ namespace UARM_Flight_Test
 #line 1 "Feature1.feature"
 #line hidden
         
-        public ДвижениеКорабляFeature(ДвижениеКорабляFeature.FixtureData fixtureData, UARM_Flight_Test_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public ДвижениеКорабляFeature(ДвижениеКорабляFeature.FixtureData fixtureData, UARMFlightTest_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
