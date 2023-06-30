@@ -17,10 +17,10 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore ConsoleApp1
+        run: dotnet restore UARM_Flight
 
       - name: Test Build
         run: dotnet build
 
       - name: MyTests
-        run: dotnet test UARM_Tests /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+        run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
