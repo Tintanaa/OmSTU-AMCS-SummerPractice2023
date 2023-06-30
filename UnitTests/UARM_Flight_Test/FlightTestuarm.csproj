@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\UARM_Flight\UARMFlight.csproj" />
+    <ProjectReference Include="..\..\UARM_Flight\uarm.csproj" />
   </ItemGroup>
 
 </Project>
