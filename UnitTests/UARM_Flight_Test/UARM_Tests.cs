@@ -52,7 +52,7 @@ namespace UARM_Flight_Test
         {
             try
             {
-                _result.Add(UARM_Flight.UARM_Flight.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
+                _result.Add(UARM_Flights.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
             }
             catch { }
         }
@@ -70,7 +70,7 @@ namespace UARM_Flight_Test
         [Then(@"возникает ошибка Exception")]
         public void ВозникаетОшибкаException()
         {
-            Assert.Throws<Exception>(() => UARM_Flight.UARM_Flight.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
+            Assert.Throws<Exception>(() => UARM_Flights.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
         }
     }
 }
