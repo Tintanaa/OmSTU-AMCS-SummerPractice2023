@@ -20,7 +20,7 @@ jobs:
         run: dotnet restore ./UARM_Flight && dotnet restore ./UnitTests
 
       - name: Test Build
-        run: dotnet build ./UnitTests
+        run: dotnet build ./UnitTests/XUnit.Coverage.sln --no-restore /p:ContinuousIntegrationBuild=true
 
       - name: MyTests
         run: dotnet test ./UnitTests /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
