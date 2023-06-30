@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UARM_Flight_Test", "UARM_Flight_Test\UARM_Flight_Test.csproj", "{FC94689C-3CAF-4AB1-8B2E-31C18B433C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UARM_Flight", "UARM_Flight\UARM_Flight.csproj", "{003E53B3-2903-480D-A350-A50B6A598FC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC94689C-3CAF-4AB1-8B2E-31C18B433C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC94689C-3CAF-4AB1-8B2E-31C18B433C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC94689C-3CAF-4AB1-8B2E-31C18B433C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC94689C-3CAF-4AB1-8B2E-31C18B433C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003E53B3-2903-480D-A350-A50B6A598FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003E53B3-2903-480D-A350-A50B6A598FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003E53B3-2903-480D-A350-A50B6A598FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003E53B3-2903-480D-A350-A50B6A598FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
