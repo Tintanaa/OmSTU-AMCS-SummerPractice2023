@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GherkinUnitTests",
     "\\GherkinUnitTests\\Unittestscoverage",
-    "\\GherkinUnitTests\\Unittestscoverage\\Squarenocov.Tests"
+    "\\GherkinUnitTests\\Unittestscoverage\\Squarenocov.Tests",
+    "\\uarm"
   ],
-  "SelectedNode": "\\GherkinUnitTests\\Unittestscoverage\\Squarenocov.Tests\\UARMFlightTest.csproj",
+  "SelectedNode": "\\uarm\\UARMFlights.cs",
   "PreviewInSolutionExplorer": false
 }
