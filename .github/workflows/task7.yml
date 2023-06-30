@@ -1,4 +1,4 @@
-name: SpaceBattle_Tests
+name: Task7spaceship
 
 on:
   push:
