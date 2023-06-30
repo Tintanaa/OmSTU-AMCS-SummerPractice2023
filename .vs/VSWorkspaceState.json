@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
     "\\GherkinUnitTests",
     "\\GherkinUnitTests\\Unittestscoverage",
     "\\GherkinUnitTests\\Unittestscoverage\\Squarenocov.Tests"
   ],
-  "SelectedNode": "\\GherkinUnitTests\\Unittestscoverage\\Squarenocov.Tests\\Unittests.cs",
+  "SelectedNode": "\\GherkinUnitTests\\Unittestscoverage\\Squarenocov.Tests\\UARMFlightTest.csproj",
   "PreviewInSolutionExplorer": false
 }

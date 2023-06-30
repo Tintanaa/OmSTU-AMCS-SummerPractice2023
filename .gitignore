@@ -42,3 +42,6 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+.vs/slnx.sqlite
+.vs/osadsad/v17/.wsuo
+.vs/VSWorkspaceState.json
