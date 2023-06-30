@@ -1,7 +1,7 @@
-using UARM_Flight;
+using UARMFlight;
 using TechTalk.SpecFlow;
 
-namespace UARM_Flight_Test
+namespace UARMFlightTest
 { 
     [Binding]
     public class »гровойќбъектћожетѕеремещатьс€ѕоѕр€мой
@@ -52,7 +52,7 @@ namespace UARM_Flight_Test
         {
             try
             {
-                _result.Add(UARM_Flights.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
+                _result.Add(UARMFlights.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
             }
             catch { }
         }
@@ -70,7 +70,7 @@ namespace UARM_Flight_Test
         [Then(@"возникает ошибка Exception")]
         public void ¬озникаетќшибкаException()
         {
-            Assert.Throws<Exception>(() => UARM_Flights.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
+            Assert.Throws<Exception>(() => UARMFlights.Shipmoving(_start, _finish, _isAllowToMove, _IsPosition, _IsSpeed));
         }
     }
 }
