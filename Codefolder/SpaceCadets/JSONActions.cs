@@ -10,46 +10,44 @@ namespace SpaceCadets
 {   
     public class JSONParser
     {
-        public void JSONParseFilter(string pathtofile)
+        public TaskData JSONParseFilter(string pathtofile)
         {
-            using (StreamReader file = File.OpenText(pathtofile))
-            using (JsonTextReader reader = new JsonTextReader(file))
-            {
-                JObject o2 = (JObject)JToken.ReadFrom(reader);
-            }
-            /*
-             * Достать все данные (желательно как в питоне список словарей и тдтп
-             * Отфильтровать их и занести в ведомость
-             * Examfiller
-             */
+            JObject o1 = JObject.Parse(File.ReadAllText(pathtofile));
+            TaskData taskdata = JsonConvert.DeserializeObject<TaskData>(Convert.ToString(o1));
+            return taskdata;
         }
-    
     }
     public class JSONMaker
     {
         public JObject JSONmaker(List<(string?, string?, string?, double)> MaxMiddleMarkStudents)
         {
-
+            var json = JsonConvert.SerializeObject(MaxMiddleMarkStudents);
+            JObject o = JObject.Parse(json);
+            return o;
         }
 
         public JObject JSONmaker(List<(string?, int)> MiddleMarkSubjects)
         {
-
+            var json = JsonConvert.SerializeObject(MiddleMarkSubjects);
+            JObject o = JObject.Parse(json);
+            return o;
         }
 
         public JObject JSONmaker(List<(string, List<string>)> BestMiddleMarkGroups)
         {
-
+            var json = JsonConvert.SerializeObject(BestMiddleMarkGroups);
+            JObject o = JObject.Parse(json);
+            return o;
         }
     }
     public class JSONWriter
     {
         public void JSONwriter(List<JObject> objlist, string filepath)
         {
-            File.WriteAllText(filepath,objlist);
-            /*
-             * ПОЖАЛУЙСТА СПИСОК JOBJECT по LINQ перебери и занеси по файлам с названием одним и тем же
-             */
+            foreach(var obj in objlist)
+            {
+                File.WriteAllText(filepath, obj.ToString());
+            }
         }
     }
 }
