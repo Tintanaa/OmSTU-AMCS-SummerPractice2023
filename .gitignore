@@ -14,7 +14,7 @@ nupkg/
 
 # Visual Studio
 .vs/
-.vs
+
 
 # Fleet
 .fleet/

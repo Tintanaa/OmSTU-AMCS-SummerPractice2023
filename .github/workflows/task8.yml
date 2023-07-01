@@ -1,8 +1,8 @@
-name: Task7spaceship
+name: Task8
 
 on:
   push:
-    branches: ["Task7spaceship"]
+    branches: ["Task8"]
 
 jobs:
   build:
