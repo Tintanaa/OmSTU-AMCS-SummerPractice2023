@@ -41,41 +41,4 @@
             return (x, y);
         }
     }
-    public class ShipFuel
-    {
-        private double _FuelTaken;
-        private double _FuelHas;
-
-        public double fueltaken { get => _FuelTaken; set => _FuelTaken = value; }
-        public double fuelhas { get => _FuelHas; set => _FuelHas = value; }
-
-        public static double Shipmoving(double Fuelhas, double Fueltaken)
-        {
-            var SM = new ShipFuel();
-            SM.fueltaken = Fueltaken;
-            SM.fuelhas = Fuelhas;
-            if (SM.fuelhas - SM.fueltaken < 0) throw new Exception();
-            return SM.fuelhas - SM.fueltaken;
-        }
-    }
-    public class ShipTurn
-    {
-        private bool _AllowToTurn;
-        private bool _IsDegree;
-        private bool _IsPosition;
-
-        public double _Degree;
-        public double _Position;
-        public static double Shipmoving(double position, double Degree, bool IsAllow, bool IsPosition, bool IsDegree)
-        {
-            var SM = new ShipTurn();
-            SM._Position = position;
-            SM._Degree = Degree;
-            SM._AllowToTurn = IsAllow;
-            SM._IsPosition = IsPosition;
-            SM._IsDegree = IsDegree;
-            if (!(SM._AllowToTurn) || !(SM._IsPosition) || !(SM._IsDegree)) throw new Exception();
-            return SM._Position + SM._Degree;
-        }
-    }
 }

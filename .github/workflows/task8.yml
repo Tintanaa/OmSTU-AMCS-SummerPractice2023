@@ -17,7 +17,7 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore uarm && dotnet restore ./GherkinUnitTests/Unittestscoverage
+        run: dotnet restore uarm && dotnet restore uarmfuel && dotnet restore uarmturn && dotnet restore ./GherkinUnitTests/Unittestscoverage
 
       - name: Gherkin Unittests build (creator @Tintanaa)
         run: dotnet build ./GherkinUnitTests/Unittestscoverage
