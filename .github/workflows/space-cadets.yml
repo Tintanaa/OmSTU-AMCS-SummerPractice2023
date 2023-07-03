@@ -16,10 +16,10 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore SpaceCadets
+        run: dotnet restore Codefolder/SpaceCadets
 
       - name: Build
-        run: dotnet build SpaceCadets --no-restore /p:ContinuousIntegrationBuild=true
+        run: dotnet build Codefolder/SpaceCadets --no-restore /p:ContinuousIntegrationBuild=true
 
       - name: Test
-        run: ./SpaceCadetsTests ./SpaceCadets/bin/Debug/net7.0/SpaceCadets
+        run: ./SpaceCadetsTests ./Codefolder/SpaceCadets/bin/Debug/net7.0/SpaceCadets
