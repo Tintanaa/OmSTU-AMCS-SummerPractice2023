@@ -19,7 +19,7 @@ jobs:
         run: dotnet restore Codefolder/SpaceCadets
 
       - name: Build
-        run: dotnet build Codefolder/SpaceCadets --no-restore /p:ContinuousIntegrationBuild=true
+        run: dotnet build Codefolder/SpaceCadets 
 
       - name: Test
         run: ./SpaceCadetsTests ./Codefolder/SpaceCadets/bin/Debug/net7.0/SpaceCadets

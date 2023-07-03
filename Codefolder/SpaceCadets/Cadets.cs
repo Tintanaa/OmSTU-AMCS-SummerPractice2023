@@ -13,7 +13,7 @@ public class Student
 public class TaskData
 {
     public string? TaskName { get; set; }
-    public List<Student> Vedomost { get; set; }
+    public List<Student> Data { get; set; }
 }
 
 
