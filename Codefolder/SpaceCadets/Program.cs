@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 using System.CommandLine.NamingConventionBinder;
+using Newtonsoft.Json.Linq;
 
 namespace SpaceCadets
 {
@@ -20,8 +21,10 @@ namespace SpaceCadets
             JSONMaker maker = new JSONMaker();
             JSONWriter writer = new JSONWriter();
             Actions actions = new Actions();
-            string filepathread = args[0];
-            string filepathwrite = args[1];
+            //string filepathread = args[0];
+            //string filepathwrite = args[1];
+            string filepathread = @"F:\Tests\Input\input.json";
+            string filepathwrite = @"F:\Tests\Output\output.json";
             var taskdata = parser.JSONParseFilter(filepathread);
             Console.WriteLine(taskdata.Data);
             switch (taskdata.TaskName)

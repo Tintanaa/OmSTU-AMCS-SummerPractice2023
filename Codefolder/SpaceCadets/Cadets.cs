@@ -8,7 +8,7 @@ public class Student
     public string? Name { get; set; }
     public string? Group { get; set; }
     public string? Discipline { get; set; }
-    public int Mark { get; set; }
+    public double Mark { get; set; }
 }
 public class TaskData
 {
