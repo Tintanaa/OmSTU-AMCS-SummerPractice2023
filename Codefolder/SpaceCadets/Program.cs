@@ -29,7 +29,7 @@ namespace SpaceCadets
             fileToReadOption,
             fileToWriteOption
             };
-            rootCommand.Description = "Your program description.";
+            rootCommand.Description = "filetoreadOption for path where file exists. fileToWriteOption for path where file saves";
             rootCommand.Handler = CommandHandler.Create<string,string>(
                 (fileToRead, fileToWrite) =>
             {
