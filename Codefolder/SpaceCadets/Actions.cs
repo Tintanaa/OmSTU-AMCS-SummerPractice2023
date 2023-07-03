@@ -15,7 +15,7 @@ namespace SpaceCadets
                         .Select(d => new
                         {
                             Discipline = d.Key,
-                            MiddleMark = d.Average(s => s.Mark)
+                            MiddleMark = Math.Round(d.Average(s => s.Mark),2)
                         })
                         .ToList()
                 })
@@ -36,7 +36,7 @@ namespace SpaceCadets
                 .Select(g => new
                 {
                     Discipline = g.Key.Discipline,
-                    MiddleMark = g.Average(s => s.Mark)
+                    MiddleMark = Math.Round(g.Average(s => s.Mark),2)
                 })
                 .ToList();
             //Допиши линк
@@ -50,7 +50,7 @@ namespace SpaceCadets
              {
                 Group = g.Key.Group,
                 Discipline = g.Key.Discipline,
-                BestMiddleMark = g.Average(d => d.Mark)
+                BestMiddleMark = Math.Round(g.Average(d => d.Mark),2)
              })
             .GroupBy(g => g.Discipline)
             .Select(g => g.OrderByDescending(d => d.BestMiddleMark).First())

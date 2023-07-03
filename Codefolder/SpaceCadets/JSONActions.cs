@@ -22,8 +22,13 @@ namespace SpaceCadets
         public JObject JSONmaker(List<dynamic> MaxMiddleMarkStudents)
         {
             var json = JsonConvert.SerializeObject(MaxMiddleMarkStudents);
-            JObject o = JObject.Parse(json);
-            return o;
+            JArray jsonArray = JArray.Parse(json);
+            Console.WriteLine(jsonArray);
+            JObject data = new JObject();
+            data["Response"] = jsonArray;
+            Console.WriteLine(data);
+            //JObject o = JObject.Parse(json);
+            return data;
         }
     }
     public class JSONWriter

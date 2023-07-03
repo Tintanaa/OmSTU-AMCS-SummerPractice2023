@@ -18,17 +18,18 @@ namespace SpaceCadets
             JSONWriter writer = new JSONWriter();
             Actions actions = new Actions();
             string filepathread = @"F:\Tests\Input\input.json";
-            string filepathwrite = @"F:\Tests\Output";
+            string filepathwrite = @"F:\Tests\Output\output.json";
             var taskdata = parser.JSONParseFilter(filepathread);
             Console.WriteLine(taskdata.Data);
-            switch(taskdata.TaskName)
+            switch (taskdata.TaskName)
             {
                 case "GetStudentsWithHighestGPA":
                     {
                         var result = actions.GetStudentsWithHighestGPA(taskdata.Data);
+                        Console.WriteLine(result[0]);
                         JObject js = new JObject();
                         js = maker.JSONmaker(result);
-                        writer.JSONwriter(js,filepathwrite);
+                        writer.JSONwriter(js, filepathwrite);
                         break;
                     }
                 case "CalculateGPAByDiscipline":
