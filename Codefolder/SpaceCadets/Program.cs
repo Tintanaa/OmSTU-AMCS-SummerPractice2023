@@ -24,21 +24,29 @@ namespace SpaceCadets
                 case "GetStudentsWithHighestGPA":
                     {
                         var result = actions.GetStudentsWithHighestGPA(taskdata.Vedomost);
+                        JObject js = new JObject();
+                        js = maker.JSONmaker(result);
+                        writer.JSONwriter(js,filepathwrite);
                         break;
                     }
                 case "CalculateGPAByDiscipline":
                     {
                         var result = actions.CalculateGPAByDiscipline(taskdata.Vedomost);
+                        JObject js = new JObject();
+                        js = maker.JSONmaker(result);
+                        writer.JSONwriter(js, filepathwrite);
                         break;
                     }
                 case "GetBestGroupsByDiscipline":
                     {
                         var result = actions.GetBestGroupsByDiscipline(taskdata.Vedomost);
+                        JObject js = new JObject();
+                        js = maker.JSONmaker(result);
+                        writer.JSONwriter(js, filepathwrite);
                         break;
                     }
-            }    
-
-
+            }
+            
         }
     }
 }

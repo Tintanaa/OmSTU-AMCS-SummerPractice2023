@@ -4,7 +4,7 @@ namespace SpaceCadets
 {
     public class Actions
     {
-        public List<object> GetStudentsWithHighestGPA(List<Student> vedomost)//Проверить
+        public List<dynamic> GetStudentsWithHighestGPA(List<Student> vedomost)//Проверить
         {
             var studentDisciplines = vedomost
                 .GroupBy(s => s.Name)
@@ -21,45 +21,41 @@ namespace SpaceCadets
                 })
                 .ToList();
             List<object> result = new List<object>();
-            foreach (var student in studentDisciplines)
-            {
-                foreach (var discipline in student.Disciplines)
+            var highestGPA = studentDisciplines.Max(s => s.Disciplines.Max(d => d.MiddleMark));
+            var studentsWithHighestGPA = studentDisciplines
+                .Where(s => s.Disciplines.Any(d => d.MiddleMark == highestGPA))
+                .Select(s => new { s.Name, Disciplines = s.Disciplines })
+                .ToList();
+            return studentsWithHighestGPA.Cast<dynamic>().ToList();
+        }
+
+        public List<dynamic> CalculateGPAByDiscipline(List<Student> vedomost)//Дописать
+        {
+            var disciplines = vedomost
+                .GroupBy(d => new { d.Discipline })
+                .Select(g => new
                 {
-                    result.Add(new
-                    {
-                        Name = student.Name,
-                        Discipline = discipline.Discipline,
-                        MiddleMark = discipline.MiddleMark
-                    });
-                }
-            }
-            return result;
-        }
-        public List<(string?, int)> CalculateGPAByDiscipline(List<Student> vedomost)//Дописать
-       {
-            var disciplines = vedomost.GroupBy(d => d.Discipline);
-            foreach (var discipline in disciplines)
-            {
-                Console.WriteLine("Discipline: " + discipline.Key);
-                Console.WriteLine("Middle Mark: " + discipline.Average(d => d.Mark));
-                Console.WriteLine();
-            }
+                    Discipline = g.Key.Discipline,
+                    MiddleMark = g.Average(s => s.Mark)
+                })
+                .ToList();
             //Допиши линк
-            return;
+            return disciplines.Cast<dynamic>().ToList();
         }
-       public List<(string group, string discipline, double bestMiddlemark)> GetBestGroupsByDiscipline(List<Student> vedomost)
-       {
+        public List<dynamic> GetBestGroupsByDiscipline(List<Student> vedomost)
+        {
             var groups = vedomost
-             .GroupBy(d => new { d.Group, d.Discipline})
+             .GroupBy(d => new { d.Group, d.Discipline })
              .Select(g => new
              {
-                 group = g.Key.Group,
-                 discipline = g.Key.Discipline,
-                 middlemark = g.Average(d => d.Mark)
+                Group = g.Key.Group,
+                Discipline = g.Key.Discipline,
+                BestMiddleMark = g.Average(d => d.Mark)
              })
-             .ToList();
-            //Допиши линк для того чтобы только лучшие выводились
-            return groups.Select(g => (g.group, g.discipline, g.middlemark)).ToList();
+            .GroupBy(g => g.Discipline)
+            .Select(g => g.OrderByDescending(d => d.BestMiddleMark).First())
+            .ToList();
+            return groups.Cast<dynamic>().ToList();
         }
    }
 }

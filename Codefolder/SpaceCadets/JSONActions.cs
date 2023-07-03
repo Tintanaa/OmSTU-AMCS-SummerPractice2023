@@ -19,35 +19,18 @@ namespace SpaceCadets
     }
     public class JSONMaker
     {
-        public JObject JSONmaker(List<(string?, string?, string?, double)> MaxMiddleMarkStudents)
+        public JObject JSONmaker(List<dynamic> MaxMiddleMarkStudents)
         {
             var json = JsonConvert.SerializeObject(MaxMiddleMarkStudents);
-            JObject o = JObject.Parse(json);
-            return o;
-        }
-
-        public JObject JSONmaker(List<(string?, int)> MiddleMarkSubjects)
-        {
-            var json = JsonConvert.SerializeObject(MiddleMarkSubjects);
-            JObject o = JObject.Parse(json);
-            return o;
-        }
-
-        public JObject JSONmaker(List<(string, List<string>)> BestMiddleMarkGroups)
-        {
-            var json = JsonConvert.SerializeObject(BestMiddleMarkGroups);
             JObject o = JObject.Parse(json);
             return o;
         }
     }
     public class JSONWriter
     {
-        public void JSONwriter(List<JObject> objlist, string filepath)
+        public void JSONwriter(JObject obj, string filepath)
         {
-            foreach(var obj in objlist)
-            {
-                File.WriteAllText(filepath, obj.ToString());
-            }
+            File.WriteAllText(filepath, obj.ToString());
         }
     }
 }
