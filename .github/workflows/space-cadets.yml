@@ -22,4 +22,4 @@ jobs:
         run: dotnet build Codefolder/SpaceCadets 
 
       - name: Test
-        run: ./SpaceCadetsTests ./Codefolder/SpaceCadets/bin/Debug/net7.0/SpaceCadets
+        run: ./SpaceCadetsTests ./Codefolder/SpaceCadets/bin/Debug/net7.0/SpaceCadets 
