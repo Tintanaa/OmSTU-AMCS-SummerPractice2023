@@ -397,3 +397,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.vs/osadsad/v17/.wsuo
+.vs/slnx.sqlite
