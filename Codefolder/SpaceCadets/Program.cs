@@ -14,7 +14,7 @@ namespace SpaceCadets
 {
     public class Program
     {
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
             JSONParser parser = new JSONParser();
             JSONMaker maker = new JSONMaker();
