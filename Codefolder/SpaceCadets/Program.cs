@@ -21,10 +21,8 @@ namespace SpaceCadets
             JSONMaker maker = new JSONMaker();
             JSONWriter writer = new JSONWriter();
             Actions actions = new Actions();
-            //string filepathread = args[0];
-            //string filepathwrite = args[1];
-            string filepathread = @"F:\Tests\Input\input.json";
-            string filepathwrite = @"F:\Tests\Output\output.json";
+            string filepathread = args[0];
+            string filepathwrite = args[1];
             var taskdata = parser.JSONParseFilter(filepathread);
             Console.WriteLine(taskdata.Data);
             switch (taskdata.TaskName)
