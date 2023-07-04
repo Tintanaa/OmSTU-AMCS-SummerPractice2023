@@ -7,13 +7,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UARMFlightTest", "Squarenoc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UARMFlight", "..\..\uarm\UARMFlight.csproj", "{48C62A3D-AEDF-4FA5-8BBD-D55A143D1602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uarmfuel", "..\..\uarmfuel\uarmfuel.csproj", "{2995A40C-3452-4ABF-82D2-BFB4491BAED0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uarmfuel", "..\..\uarmfuel\uarmfuel.csproj", "{2995A40C-3452-4ABF-82D2-BFB4491BAED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uarmturn", "..\..\uarmturn\uarmturn.csproj", "{1B8C0815-E27F-4940-A676-2C7756EA823A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uarmturn", "..\..\uarmturn\uarmturn.csproj", "{1B8C0815-E27F-4940-A676-2C7756EA823A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uarmfueltests", "uarmfueltests\uarmfueltests.csproj", "{04629555-751D-43DD-8CB0-C46045E2D215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uarmfueltests", "uarmfueltests\uarmfueltests.csproj", "{04629555-751D-43DD-8CB0-C46045E2D215}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uarmturntests", "uarmturntests\uarmturntests.csproj", "{2579EF14-559B-4843-BD6D-BF6FFB582D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uarmturntests", "uarmturntests\uarmturntests.csproj", "{2579EF14-559B-4843-BD6D-BF6FFB582D35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2FF34818-1B49-42F1-ACAC-54A102DD1001}"
+	ProjectSection(SolutionItems) = preProject
+		specflow.json = specflow.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
