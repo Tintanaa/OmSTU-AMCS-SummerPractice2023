@@ -46,3 +46,10 @@ msbuild.wrn
 .vs/slnx.sqlite
 .vs/osadsad/v17/.wsuo
 .vs/VSWorkspaceState.json
+.vs/osadsad/v17/workspaceFileList.bin
+.vs/slnx.sqlite
+.vs/osadsad/v17/workspaceFileList.bin
+*.sqlite
+.vs/osadsad/v17/workspaceFileList.bin
+GherkinUnitTests/Unittestscoverage/Unittestscoverage.sln
+/.vs/slnx.sqlite
